@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const Timeline = ({data, title, caption}: {data: string, title: string, caption: string}) => {
   return (
