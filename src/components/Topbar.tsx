@@ -13,7 +13,7 @@ const Topbar = () => {
     ]
 
   return (
-    <Navbar onMenuOpenChange={setOpen}>
+    <Navbar onMenuOpenChange={setOpen} shouldHideOnScroll>
         <NavbarContent>
             <NavbarMenuToggle 
                 aria-label={open ? "Close menu" : "Open Menu"}
