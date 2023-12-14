@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 import TextCard from './components/TextCard'
 import { Fade } from 'react-awesome-reveal'
 import Timeline from './components/Timeline'
+import DividerSection from './components/DividerSection'
 
 function App() {
   
@@ -69,7 +70,38 @@ function App() {
               </div>
             </div>
 
-            <div className='items-center flex flex-col flex-1 justify-center' id='projects'>
+            <div className='flex flex-col items-center justify-center flex-1' id='technologies'>
+              <h1 className='font-bold text-violet-500 p-2 mb-2'>Technologies</h1>
+              <div className='grid grid-cols-1 !items-start gap-10'>
+                <DividerSection 
+                  title='Programming Languages'
+                  description='Programming Languages that i actually have experience with.'
+                  labels={[
+                    {label: 'TypeScript', iconImage: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'},
+                    {label: 'JavaScript', iconImage: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'},
+                    {label: 'Python', iconImage: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg'},
+                    {label: 'C#', iconImage: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg'},
+                    {label: 'Java', iconImage: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'},
+                  ]}
+                />
+
+                <DividerSection 
+                  title='Frameworks'
+                  description='Frameworks that i actually worked with:'
+                  labels={[
+                    {label: 'React', iconImage: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'},
+                    {label: 'Django', iconImage: 'https://github.com/devicons/devicon/blob/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/django/django-plain.svg'},
+                    {label: 'Next.js', iconImage: 'https://github.com/devicons/devicon/blob/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nextjs/nextjs-original.svg'},
+                    {label: 'SpringBoot' , iconImage: 'https://github.com/devicons/devicon/tree/v2.15.1/icons/springboot/springboot-original.svg'},
+                    {label: 'NextUi', iconImage: 'https://github.com/nextui-org/nextui/blob/main/packages/logo/logo.svg'},
+                    {label: 'Tailwind', iconImage: 'https://github.com/devicons/devicon/blob/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/tailwindcss/tailwindcss-original.svg'},
+                    {label: 'Angular', iconImage: 'https://github.com/devicons/devicon/blob/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/angularjs/angularjs-original.svg'},
+                  ]}
+                />
+              </div>
+            </div>
+
+            <div className='items-center flex flex-col flex-1 gap-4 mt-52 justify-center' id='projects'>
               <h1 className='font-bold text-violet-500'>Projects</h1>
               <h2 className='font-extrabold text-center gap-2 text-emerald-600'>Completed Projects</h2>
               <div className='grid grid-cols-3 items-center'>
@@ -133,10 +165,6 @@ function App() {
                   externalLinkName='Redirect To Upload-ai'
                 />
               </div>
-            </div>
-
-            <div id='technologies'>
-              <h1>Technologies</h1>
             </div>
           </div>
         </Fade>
