@@ -106,7 +106,7 @@ function App() {
 
                 <DividerSection 
                   title='Work Tools'
-                  description='Tools that i actually worked with along the years:'
+                  description='Tools that i actually worked with:'
                   labels={[
                     {label: 'PowerBi' , iconImage: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powerbi/powerbi-original.svg'},
                     {label: 'Jira', iconImage: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg'},
@@ -125,9 +125,30 @@ function App() {
                 caption='Right below is my contact information, like my email or WhatsApp, my GitHub and my LinkedIn. So, if you need to contact me or want to deal a new project, feel free to contact me!'
               />
 
-              <div className='gap-2 p-2 max-w-[1400px] flex flex-1 items-start justify-start'>
-                  <ButtonGroup variant='ghost' color='primary' className='max-w-xs w-24 pr-7'>
+              <div className='gap-2 p-2 max-w-[1400px] flex flex-1 flex-col'>
+                  <ButtonGroup variant='ghost' color='primary' className='max-w-xs w-24'>
+
                     <Button
+                     onClick={() => window.open('mailto:darliankeira229@gmail.com')}
+                    >
+                      Email
+                    </Button>
+
+                    <Button
+                      onClick={() => window.open('https://api.whatsapp.com/send?phone=5531999459326')}
+                    >
+                      WhatsApp
+                    </Button>
+
+                    <Button
+                      onClick={() => window.open('https://www.instagram.com/darlanj.oliveira')}
+                    >
+                      Instagram
+                    </Button>
+                  </ButtonGroup>
+
+                  <ButtonGroup variant='ghost' color='secondary' className='max-w-xs w-24'>
+                  <Button
                       onClick={() => window.open('https://github.com/DarlanZero')}
                     >
                       Github
@@ -146,21 +167,9 @@ function App() {
                     </Button>
 
                     <Button
-                     onClick={() => window.open('mailto:darliankeira229@gmail.com')}
+                      onClick={() => window.open('https://t.me/DarlanZeroDev')}
                     >
-                      Email
-                    </Button>
-
-                    <Button
-                      onClick={() => window.open('https://api.whatsapp.com/send?phone=5531999459326')}
-                    >
-                      WhatsApp
-                    </Button>
-
-                    <Button
-                      onClick={() => window.open('https://www.instagram.com/darlanj.oliveira')}
-                    >
-                      Instagram
+                      Telegram
                     </Button>
                   </ButtonGroup>
               </div>
