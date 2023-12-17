@@ -12,6 +12,7 @@ import TextCard from './components/TextCard'
 import { Fade } from 'react-awesome-reveal'
 import Timeline from './components/Timeline'
 import DividerSection from './components/DividerSection'
+import { Button, ButtonGroup, Divider } from '@nextui-org/react'
 
 function App() {
   
@@ -34,6 +35,10 @@ function App() {
 
                 <TextCard 
                   caption='Actually i can speak in two languages: English and Portuguese. So i can offer my in many ways to clients and partners.'
+                />
+
+                <TextCard 
+                  caption='I am always studiyng and learning new things, so if you have any questions or suggestions, feel free to contact me.'
                 />
               </div>
 
@@ -72,7 +77,7 @@ function App() {
 
             <div className='flex flex-col items-center justify-center flex-1' id='technologies'>
               <h1 className='font-bold text-violet-500 p-2 mb-2'>Technologies</h1>
-              <div className='grid grid-cols-1 !items-start gap-10'>
+              <div className='grid grid-cols-1 !items-start gap-10 mb-10'>
                 <DividerSection 
                   title='Programming Languages'
                   description='Programming Languages that i actually have experience with.'
@@ -98,13 +103,73 @@ function App() {
                     {label: 'Angular', iconImage: 'https://github.com/devicons/devicon/blob/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/angularjs/angularjs-original.svg'},
                   ]}
                 />
+
+                <DividerSection 
+                  title='Work Tools'
+                  description='Tools that i actually worked with along the years:'
+                  labels={[
+                    {label: 'PowerBi' , iconImage: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powerbi/powerbi-original.svg'},
+                    {label: 'Jira', iconImage: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg'},
+                    {label: 'Git', iconImage: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'},
+                    {label: 'Github', iconImage: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'},
+                  ]}
+                />
               </div>
             </div>
 
-            <div className='items-center flex flex-col flex-1 gap-4 mt-52 justify-center' id='projects'>
+            <div className='items-center flex flex-col flex-1 gap-4 mt-10 justify-center' id='contact'>
+              <Divider />
+              <h1 className='font-bold text-violet-500 mb-2'>Contact</h1>
+              
+              <TextCard 
+                caption='Right below is my contact information, like my email or WhatsApp, my GitHub and my LinkedIn. So, if you need to contact me or want to deal a new project, feel free to contact me!'
+              />
+
+              <div className='gap-2 p-2 max-w-[1400px]'>
+                  <ButtonGroup variant='ghost' color='primary' className='max-w-xs w-24'>
+                    <Button
+                      onClick={() => window.open('https://github.com/DarlanZero')}
+                    >
+                      Github
+                    </Button>
+
+                    <Button
+                      onClick={() => window.open('https://www.linkedin.com/in/darlanoliveiradev')}
+                    >
+                      LinkedIn
+                    </Button>
+
+                    <Button
+                      onClick={() => window.open('https://twitter.com/DarlanZeroDev')}
+                    >
+                      Twitter
+                    </Button>
+
+                    <Button
+                     onClick={() => window.open('mailto:darliankeira229@gmail.com')}
+                    >
+                      Email
+                    </Button>
+
+                    <Button
+                      onClick={() => window.open('https://api.whatsapp.com/send?phone=5531999459326')}
+                    >
+                      WhatsApp
+                    </Button>
+
+                    <Button
+                      onClick={() => window.open('https://www.instagram.com/darlanj.oliveira')}
+                    >
+                      Instagram
+                    </Button>
+                  </ButtonGroup>
+              </div>
+            </div>
+
+            <div className='items-center flex flex-col flex-1 gap-4 justify-center' id='projects'>
               <h1 className='font-bold text-violet-500'>Projects</h1>
               <h2 className='font-extrabold text-center gap-2 text-emerald-600'>Completed Projects</h2>
-              <div className='grid grid-cols-3 items-center'>
+              <div className='lg:grid lg:grid-cols-3 items-center'>
 
                 <SlickCard 
                 title='Frontend Developer'
@@ -145,7 +210,7 @@ function App() {
 
               <h2 className='font-extrabold text-center gap-2 text-cyan-600'>Ongoing Projects</h2>
 
-              <div className='grid grid-cols-3 items-center'>
+              <div className='lg:grid lg:grid-cols-3 items-center'>
 
                 <SlickCard 
                   title='Snapgram'
