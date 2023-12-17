@@ -125,8 +125,8 @@ function App() {
                 caption='Right below is my contact information, like my email or WhatsApp, my GitHub and my LinkedIn. So, if you need to contact me or want to deal a new project, feel free to contact me!'
               />
 
-              <div className='gap-2 p-2 max-w-[1400px]'>
-                  <ButtonGroup variant='ghost' color='primary' className='max-w-xs w-24'>
+              <div className='gap-2 p-2 max-w-[1400px] flex flex-1 items-start justify-start'>
+                  <ButtonGroup variant='ghost' color='primary' className='max-w-xs w-24 pr-7'>
                     <Button
                       onClick={() => window.open('https://github.com/DarlanZero')}
                     >
