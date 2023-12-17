@@ -1,18 +1,22 @@
 import './App.css'
+import { Button, ButtonGroup, Divider } from '@nextui-org/react'
+
 import SlickCard from './components/SlickCard'
 import Topbar from './components/Topbar'
+import Footer from './components/Footer'
+import TextCard from './components/TextCard'
+import { Fade } from 'react-awesome-reveal'
+import Timeline from './components/Timeline'
+import DividerSection from './components/DividerSection'
+
 import Portfolioimage from './assets/portfolio-darlanzero.vercel.app.png'
 import Snapgram from './assets/Snapgram.png'
 import Spacetime from './assets/Spacetime.png'
 import Santander from './assets/Santander-dev-week.png'
 import SaintSeiya from './assets/Saint-Seiya.png'
 import UploadAI from './assets/Upload-ai.png'
-import Footer from './components/Footer'
-import TextCard from './components/TextCard'
-import { Fade } from 'react-awesome-reveal'
-import Timeline from './components/Timeline'
-import DividerSection from './components/DividerSection'
-import { Button, ButtonGroup, Divider } from '@nextui-org/react'
+import NlwExport from './assets/NLWWebsite.png'
+import Sensidia from './assets/Sensidia.png'
 
 function App() {
   
@@ -142,6 +146,7 @@ function App() {
 
                     <Button
                       onClick={() => window.open('https://www.instagram.com/darlanj.oliveira')}
+
                     >
                       Instagram
                     </Button>
@@ -214,6 +219,24 @@ function App() {
                   imageAlt='Saint Seiya RPG'
                   externalLink='https://saint-seyia-darlanzero.vercel.app/frontpage.html'
                   externalLinkName='Redirect to Saint Seiya Site'
+                />
+
+                <SlickCard 
+                  title='NLW Export'
+                  content='A Landing Page created on 2022 for beginner web development'
+                  imageSrc={NlwExport}
+                  imageAlt='NLW Export'
+                  externalLink='https://nlwesport.netlify.app'
+                  externalLinkName='Redirect to NLW Export'
+                />
+
+                <SlickCard 
+                  title='Sensidia'
+                  content='A Website template of a view list of A Shop created with PHP and MySQL.'
+                  imageSrc={Sensidia}
+                  imageAlt='Sensidia'
+                  externalLink='https://sensidia1.000webhostapp.com/index.php'
+                  externalLinkName='Redirect to Sensidia'
                 />
               </div>
 
