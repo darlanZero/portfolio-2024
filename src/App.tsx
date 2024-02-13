@@ -1,13 +1,6 @@
 import './App.css'
 import { Button, ButtonGroup, Divider } from '@nextui-org/react'
-
-import SlickCard from './components/SlickCard'
-import Topbar from './components/Topbar'
-import Footer from './components/Footer'
-import TextCard from './components/TextCard'
 import { Fade } from 'react-awesome-reveal'
-import Timeline from './components/Timeline'
-import DividerSection from './components/DividerSection'
 
 import Portfolioimage from './assets/portfolio-darlanzero.vercel.app.png'
 import Snapgram from './assets/Snapgram.png'
@@ -18,6 +11,7 @@ import UploadAI from './assets/Upload-ai.png'
 import NlwExport from './assets/NLWWebsite.png'
 import Sensidia from './assets/Sensidia.png'
 import RefineDashboard from './assets/dashboard-refine.gif'
+import { DividerSection, Footer, SlickCard, TextCard, Timeline, Topbar } from './components'
 
 function App() {
   
