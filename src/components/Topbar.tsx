@@ -1,4 +1,4 @@
-import { Avatar, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from "@nextui-org/react"
+import { Avatar, Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from "@nextui-org/react"
 import { useState } from "react"
 
 
@@ -71,27 +71,47 @@ const Topbar = () => {
                     </DropdownItem>
 
                     <DropdownItem key="Github">
-                        <Link href="https://github.com/darlanzero" target="_blank" color="success">
+                        <Button
+                            onClick={() => window.open("https://github.com/darlanzero", "_blank")} 
+                            color="success"
+                            className="w-full text-zinc-50"
+                            variant="faded"
+                        >
                             Github
-                        </Link>
+                        </Button>
                     </DropdownItem>
 
                     <DropdownItem key="Linkedin">
-                        <Link href="https://www.linkedin.com/in/darlanoliveiradev/" target="_blank" color="success">
+                        <Button
+                            color="success"
+                            onClick={() => window.open("https://www.linkedin.com/in/darlanoliveiradev/", "_blank")}
+                            className="w-full text-zinc-50"
+                            variant="faded"
+                        >
                             Linkedin
-                        </Link>
+                        </Button>
                     </DropdownItem>
 
                     <DropdownItem key="Twitter">
-                        <Link href="https://twitter.com/DarlanZeroDev" target="_blank" color="success">
+                        <Button 
+                            color="success"
+                            onClick={() => window.open("https://twitter.com/DarlanZeroDev", "_blank")}
+                            className="w-full text-zinc-50"
+                            variant="faded"
+                        >
                             Twitter
-                        </Link>
+                        </Button>
                     </DropdownItem>
 
                     <DropdownItem key="Instagram">
-                        <Link href="https://www.instagram.com/darlanj.oliveira/" target="_blank" color="success">
+                        <Button
+                            color="success"
+                            onClick={() => window.open("https://www.instagram.com/darlanj.oliveira/", "_blank")}
+                            className="w-full text-zinc-50"
+                            variant="faded"
+                        >
                             Instagram
-                        </Link>
+                        </Button>
                     </DropdownItem>
                 </DropdownMenu>
             </Dropdown>
