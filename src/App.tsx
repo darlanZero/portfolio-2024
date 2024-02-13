@@ -267,6 +267,23 @@ function App() {
                 />
               </div>
             </div>
+
+            <div className='p-4 gap-4 items-center justify-center text-center flex flex-1 flex-col' id='schedule'>
+              <h2 className='font-bold text-violet-500 p-2 mb-2 text-center'>Schedule</h2>
+
+              <TextCard 
+                caption='This section is about the clients can contact with me more directly about projects and ideas they have, or if they have any question, they can contact with me on google meet using the google calendar meetings function.'
+              />
+
+              <div className='w-full items-center flex text-center justify-center p-4 gap-4'>
+                <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2eT3awKqMnruY_qd03CVv7VU2wGfTYcWAZzoq5Qpxmibwpm2n6nnazaoQGt0LBd_p6T2sx5BGh?gv=true" style={{
+                  border: 0,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }} width="100%" height="600" />
+              </div>
+              
+            </div>
           </div>
         </Fade>
         <Footer />
