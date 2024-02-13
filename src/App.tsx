@@ -17,6 +17,7 @@ import SaintSeiya from './assets/Saint-Seiya.png'
 import UploadAI from './assets/Upload-ai.png'
 import NlwExport from './assets/NLWWebsite.png'
 import Sensidia from './assets/Sensidia.png'
+import RefineDashboard from './assets/dashboard-refine.gif'
 
 function App() {
   
@@ -238,11 +239,6 @@ function App() {
                   externalLink='https://sensidia1.000webhostapp.com/index.php'
                   externalLinkName='Redirect to Sensidia'
                 />
-              </div>
-
-              <h2 className='font-extrabold text-center gap-2 text-cyan-600'>Ongoing Projects</h2>
-
-              <div className='lg:grid lg:grid-cols-3 items-center'>
 
                 <SlickCard 
                   title='Snapgram'
@@ -252,6 +248,20 @@ function App() {
                   externalLink='https://snapgram-blush.vercel.app' 
                   externalLinkName='Redirect To Snapgram'
                 />
+
+              </div>
+
+              <h2 className='font-extrabold text-center gap-2 text-cyan-600'>Ongoing Projects</h2>
+
+              <div className='lg:grid lg:grid-cols-3 items-center'>
+                  <SlickCard 
+                    title='Dashobard refine App'
+                    content='A Full-Stack Dashboard application created with Refine and GraphQL using mock-data'
+                    imageSrc={RefineDashboard}
+                    imageAlt='Refine Dashboard'
+                    externalLink='https://github.com/darlanZero/refine-dashboard-app'
+                    externalLinkName='Redirect To Refine Dashboard'
+                  />
 
                 <SlickCard 
                   title='Upload-ai'
