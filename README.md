@@ -1,30 +1,34 @@
-# React + TypeScript + Vite
+# Darlan Oliveira — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio for **Darlan J. Oliveira**, full stack developer, systems analyst and founder of [StarsFord](https://github.com/StarsFord).
 
-Currently, two official plugins are available:
+The site presents selected projects, professional experience and the technologies I use to build web, mobile, desktop and automation products.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Stack
 
-## Expanding the ESLint configuration
+- React + TypeScript
+- Vite
+- Responsive CSS with accessible motion preferences
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Run locally
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+npm install
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+For a production build:
+
+```bash
+npm run build
+```
+
+## Links
+
+- [GitHub](https://github.com/darlanZero)
+- [LinkedIn](https://www.linkedin.com/in/darlanoliveiradev)
+- [StarsFord](https://github.com/StarsFord)
+
+---
+
+Designed and built by Darlan Oliveira.
